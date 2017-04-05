@@ -7,7 +7,7 @@ class EsperanceApp < Sinatra::Application
     erb :index
   end
 
-  get '/stylesheet.css' do
+  get '/assets/stylesheet/main.css' do
     scss :stylesheet
   end
 
