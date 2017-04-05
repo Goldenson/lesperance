@@ -7,6 +7,18 @@ class EsperanceApp < Sinatra::Application
     erb :index
   end
 
+  get '/projet' do
+    erb :projet
+  end
+
+  get '/equipe' do
+    erb :equipe
+  end
+
+  get '/contact' do
+    erb :contact
+  end
+
   get '/main.css' do
     scss :main
   end
