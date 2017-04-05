@@ -10,17 +10,4 @@ class EsperanceApp < Sinatra::Application
   get '/main.css' do
     scss :main
   end
-
-  # helpers do
-  #   def obfuscated_email(text:nil, link_class:"")
-  #     obfuscated = "#{ email_parts.to_json }.reverse().join('@')"
-  #     "<script>
-  #       document.write('<a href=\"mailto:' + #{ obfuscated } + '\" class=\"#{ link_class }\">#{ text || ["' + ", obfuscated, " + '"].join }</a>');
-  #     </script>"
-  #   end
-  #
-  #   def email_parts
-  #     ["eliot", "ebritton.com"].reverse
-  #   end
-  # end
 end
