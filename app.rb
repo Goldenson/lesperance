@@ -1,4 +1,4 @@
-require "sinatra/base"
+require 'sinatra/base'
 
 class EsperanceApp < Sinatra::Application
   set :erb, format: :html5
@@ -7,8 +7,8 @@ class EsperanceApp < Sinatra::Application
     erb :index
   end
 
-  get '/assets/stylesheet/main.css' do
-    scss :stylesheet
+  get '/main.css' do
+    scss :main
   end
 
   # helpers do
