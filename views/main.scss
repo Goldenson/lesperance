@@ -1,8 +1,12 @@
 p {
-  margin: 0;
+  margin: 10;
 }
 body {
-  font-size: 20px;
+  font-family: Helvetica;
+}
+
+main {
+  flex: 1;
 }
 
 .layout {
@@ -19,6 +23,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin: 0;
 
   @media (max-width: 600px) {
     a {
@@ -48,11 +53,24 @@ body {
 }
 
 .menu__item {
-  width: 100px;
-  background-color: #eee;
+  width: 125px;
+  // background-color: #eee;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 1000px;
   margin:  auto;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-top: 30px;
 }
