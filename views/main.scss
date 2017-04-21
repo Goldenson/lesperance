@@ -146,6 +146,10 @@ a {
 
 .underline {
   text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .footer {
