@@ -1,2 +1,4 @@
 .sass-cache
 .DS_STORE
+tmp/cache/*
+log/development.log
